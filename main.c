@@ -255,7 +255,12 @@ int main(void)
     // prints to the Terminal IO window in IAR or SWO Debug console in STM32IDE
     printf("Temperature: %2.2f C.\n",temp);
 
-	HAL_Delay(2000);
+	// loop for a time
+    int counter = 1000000;
+    while(counter) { counter--; }
+    
+    // HAL_Delay seems to hang for me in IAR, but not in STM32IDE. 
+    //HAL_Delay(1000);
 
 
     /* USER CODE END WHILE */
