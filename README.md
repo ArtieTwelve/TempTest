@@ -2,6 +2,9 @@ TempTest
 
 A simple program to read the temperature data from the HTS221 sensor on the STM32L475VG dev board. Most of the calibration code came directly from HTS221.c inside the board support package. <p>
   
+A good article on HAL_I2C methods can be found at:<p>
+    https://forum.digikey.com/t/using-the-stm32cube-hal-i2c-driver-in-master-mode/15122
+  
    I used CubeMX to generate an IAR/STM32IDE project and then replaced the generated main.c file with this one.<p>
      
 Setup: I used STM32 CubeMX to generate the IAR project files.
